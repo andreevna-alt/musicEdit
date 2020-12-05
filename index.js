@@ -1,3 +1,8 @@
 import abcjs from "abcjs";
-abcjs.renderAbc("paper", "X:1\nK:D\nDDAA|BBA2|\n");
-console.log("Hello, world")
+
+window.onload = function() {
+    abc_editor = new abcjs.Editor("abc", { 
+        canvas_id: "paper", 
+        warnings_id:"warnings" 
+    });
+}
